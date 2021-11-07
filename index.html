@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Project 150</title>
+</head>
+
+<body>
+    <a-scene background="color: #1b7ced">
+        <a-camera position="0 1 -1.34268095513866" rotation="" id="camera">
+        </a-camera>
+
+        <a-assets>
+            <a-asset-item id="train" src="./models/train/train.glb"></a-asset-item>
+            <a-asset-item id="mountain" src="./models/mountain/scene.gltf"></a-asset-item>
+            <a-asset-item id="track" src="./models/train_track/scene.gltf"></a-asset-item>
+        </a-assets>
+
+
+        <a-entity gltf-model="./models/train/train.glb" position="0 0.13808 -9.02184" rotation="0 -179.9998479605043 0"
+            scale="-0.0391 0.047 -0.04" id="train">
+        </a-entity>
+
+        <a-entity gltf-model="./models/mountain/scene.gltf" position="-4.3279 -6.46156 -99.50532"
+            rotation="0 141.00434042390046 0" scale="80 84.83825 80" id="mountain">
+        </a-entity>
+
+        <a-entity gltf-model="./models/train_track/scene.gltf" position="0 0.0183 -9.27218" scale="0.61847 1 1.1147"
+            rotation="0 90 0" id="track-1">
+        </a-entity>
+
+        <a-entity gltf-model="./models/train_track/scene.gltf" position="-14.48094 0.0183 -9.27218"
+            scale="0.61847 1 1.1147" rotation="0 90 0" id="track-2">
+        </a-entity>
+
+        </a-entity>
+    </a-scene>
+
+</body>
+
+</html>
